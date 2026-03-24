@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+      🧠 PROJECT: Link Library + Media + Embed
+
+      ✅ MODULE TOPICS THIS PROJECT PRACTICES
+      1) Introduction to Semantic HTML
+      2) Understanding Semantic HTML (choosing tags by meaning)
+      3) Anchor Tags & Hyperlinks
+      4) Adding Images, Audio, and Video
+      5) Embedding content with <iframe>
+
+      🎯 PROJECT GOAL
+      Build a semantic link library page that teaches anchor tags AND includes media + an iframe embed.
+
+  
+    -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Library + Media + Embed</title>
+    <meta name="description" content="Linking library, media, and embedding" />
+    <meta name="author" content="ME" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <a class="skip" href="#content">Skip to content</a>
+        <h1>Link stuff I think</h1>
+        <p class="small">random text I'm inputting here for whatever reason</p>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#embed">Embed</a></li>
+          <li><a href="#extras">Extras</a></li>
+        </ul>
+      </nav>
+
+      <main id="content">
+        <section id="media">
+          <h2>Media</h2>
+          <article>
+            <h3>Art I like from Pinterest</h3>
+            <ul>
+              <li>
+                <figure>
+                  <figcaption>Dark Souls Art</figcaption>
+                  <img
+                    src="https://i.pinimg.com/736x/d6/43/c3/d643c32c825a88983b4e352e4bb8e647.jpg"
+                    alt="darksouls art"
+                    width="200"
+                  />
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <figcaption>Spider-man Art</figcaption>
+                  <img
+                    src="https://i.pinimg.com/736x/77/82/b0/7782b034c14fd56730470d59714b0b55.jpg"
+                    alt="Spiderman art"
+                    width="200"
+                  />
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <figcaption>Invincible Art</figcaption>
+                  <img
+                    src="https://i.pinimg.com/736x/fd/aa/58/fdaa58cdb34408b64e92423d9c6bb6ca.jpg"
+                    alt="Invincible Art"
+                    width="200"
+                  />
+                </figure>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>One of my favorite songs currently:</h3>
+            <audio controls>
+              <source src="song.mp3" type="audio/mpeg" />
+            </audio>
+          </article>
+
+          <article>
+            <h3>Timelapse of me drawing</h3>
+            <p class="small">
+              I drew part of the cover of Kendrick Lamar's Mr. Morale and The
+              Big Steppers album cover
+            </p>
+            <video width="200" height="400" controls>
+              <source src="drawing.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </section>
+        <section id="embed">
+          <h2>Embeded</h2>
+          <h3>Here is a few videos that I recently watched</h3>
+          <article>
+            <h4>Video 1</h4>
+            <p>
+              Profound Pondering helps me with keeping me aligned with myself
+              and not losing track
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/uxorvXIgQ0U?si=88f7iP6PJCn4RNsQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </article>
+          <article>
+            <h4>Video 2</h4>
+            <p>
+              This video recently popped up on my feed and it really spoke to me
+              because I know I have the capability to become a SWE but I think
+              it was the stakes at hand. I got comfortable of having a backup
+              plan. So this is it... NO backup plan and me becoming a SWE is
+              inevitable
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/JVGSzNGLjsU?si=TyQnPCnwkDpLZmxu"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </article>
+          <article>
+            <h4>Video 3</h4>
+            <p>
+              The philosophy of Todo seem random at first, but then after
+              watching the video it open my mind to something new. That a man
+              that can come up with a answer to a left field questions, shows
+              that you are a man that has things figured out
+            </p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Tigm17zof5U?si=HfmYbj53GIkY3lPa"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </article>
+        </section>
+        <section id="extras">
+          <h2>Extras</h2>
+          <article>
+            <h3>Some websites I visit often</h3>
+            <ul>
+              <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                  >Youtube</a
+                >
+              </li>
+              <li>
+                <a href="https://pinterest.com" target="_blank" rel="noopener"
+                  >Pinterest</a
+                >
+              </li>
+              <li>
+                <a href="https://reddit.com" target="_blank" rel="noopener"
+                  >Reddit</a
+                >
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+      <aside>
+        <h2>Link Best Practices</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+              >Clean Code</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <footer>
+        <p>
+          Using html semantics and being descriptive in HTML is to help for
+          others that are impaired in any way. So for those that have the
+          ability should look out for those that can't
+        </p>
+        <p class="small">Copyright (c) 2026 BalatroAP. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
