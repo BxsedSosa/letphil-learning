@@ -1,0 +1,11 @@
+.menu a {
+  color: red;
+}
+
+ul > li {
+  padding: 10px;
+}
+
+li + li {
+  background-color: green;
+}
