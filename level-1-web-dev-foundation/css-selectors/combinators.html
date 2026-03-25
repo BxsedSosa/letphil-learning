@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Combinators</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    div p {
+      color: green;
+    }
+
+    h2+p {
+      color: red;
+    }
+
+    h3~p {
+      color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <p>This is outside the div</p>
+  <div>
+    <p>This is inside of a div</p>
+    <div>
+      <p>This is a child div p of a parent div</p>
+    </div>
+  </div>
+  <h2>This is a subheading</h2>
+  <p>This is a p tag under the subheading</p>
+
+  <h3>heading</h2>
+    <p>First paragraph</p>
+    <p>second paragraph</p>
+</body>
+
+</html>
