@@ -1,0 +1,41 @@
+.items li {
+  padding: 20px;
+}
+
+.items li:hover {
+  background-color: orangered;
+}
+
+.items li:focus {
+  border: 5px solid red;
+}
+
+.items li:first-child {
+  font-weight: bolder;
+}
+
+.items li:last-child {
+  color: lightgray;
+}
+
+.items li:nth-child(2) {
+  background-color: whitesmoke;
+}
+
+.items li::before {
+  content: "<";
+  color: red;
+}
+
+.items li::after {
+  content: ">";
+  color: red;
+}
+
+.items li::first-letter {
+  font-size: 20px;
+}
+
+.items li::first-line {
+  font-weight: bolder;
+}
