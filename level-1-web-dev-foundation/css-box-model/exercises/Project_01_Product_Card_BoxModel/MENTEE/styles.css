@@ -30,6 +30,26 @@
   Set a min-height (example: 220px) so height behavior is visible.
   Add a background color so you can SEE the content box.
 */
+body {
+  font-family: Arial, sans-serif;
+  margin: auto;
+}
+
+.page {
+  max-width: 10;
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  width: 320px;
+  min-height: 220px;
+  background-color: tan;
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
@@ -40,6 +60,10 @@
   Test: change padding to 36px and notice what changes.
 */
 
+.card {
+  padding: 18px;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 4 — Border (outline around padding) */
@@ -48,6 +72,11 @@
   Add border-radius so edges are rounded.
   Test: make border 6px thick and see how the box changes.
 */
+
+.card {
+  border: 6px solid #ddd;
+  border-radius: 10px;
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
@@ -58,6 +87,10 @@
   Say it: padding = inside space, margin = outside space.
 */
 
+#cardB {
+  margin-top: 18px;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 6 — Box shadow (depth without affecting layout) */
@@ -65,6 +98,10 @@
   Add box-shadow to .card (subtle).
   Confirm: shadow does not push other elements away (not like margin).
 */
+
+.card {
+  box-shadow: 10px 10px black;
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
