@@ -1,3 +1,11 @@
+:root {
+  --forest-one: #eff7cf;
+  --forest-two: #bad9b5;
+  --forest-three: #aba361;
+  --forest-four: #732c2c;
+  --forest-five: #420c14;
+}
+
 /*
   🧠 PROJECT: Panels Studio — box-sizing & box-shadow
 
@@ -21,6 +29,25 @@
   Add gap so panels don't touch.
 */
 
+body {
+  background-color: var(--forest-five);
+  color: var(--forest-one);
+}
+
+body,
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  max-width: 100vh;
+  padding: 20px;
+}
+
+.row {
+  display: grid;
+  background-color: var(--forest-three);
+  gap: 5px;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 2 — Give all panels the same base styling */
@@ -29,6 +56,13 @@
   This gives all panels the same starting point.
 */
 
+.panel {
+  background-color: var(--forest-four);
+  border: 1px solid var(--forest-five);
+  border-radius: 5px;
+  padding: 10px;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 3 — Show the problem (default sizing) */
@@ -36,6 +70,11 @@
   On .panel--default, increase padding (example: 28px).
   Notice: with default sizing, extra padding can make it feel larger.
 */
+
+.panel--default,
+.panel--borderbox {
+  padding: 28px;
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
@@ -46,6 +85,10 @@
   Observe: it stays consistent because padding/border stay inside the width.
 */
 
+.panel--borderbox {
+  box-sizing: border-box;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 5 — Add box-shadow (depth) */
@@ -53,6 +96,10 @@
   On .panel--shadow, add a box-shadow (subtle but visible).
   Confirm: shadow does not change layout spacing.
 */
+
+.panel--shadow {
+  box-shadow: 5px 5px var(--forest-one);
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
