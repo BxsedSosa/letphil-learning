@@ -20,6 +20,31 @@
   Add simple card-like styling for .demo sections so you can read clearly.
 */
 
+:root {
+  --ink-black: #0d1321;
+  --deep-spaceblue: #1d2d44;
+  --blue-slate: #3e5c76;
+  --dusty-denim: #748cab;
+  --eggshell: #f0ebd8;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--ink-black);
+  color: var(--eggshell);
+}
+
+.page {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 25% 25%;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 2 — Show inline behavior (inline pills) */
@@ -28,6 +53,13 @@
   Add padding + border-radius + background so it looks like a pill.
   Notice: inline elements do NOT start on a new line.
 */
+
+.pill--inline {
+  display: inline;
+  padding: 3px;
+  border-radius: 40%;
+  background-color: var(--blue-slate);
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
@@ -39,6 +71,14 @@
   Notice: block elements take the full line.
 */
 
+.pill--block {
+  display: block;
+  padding: 3px;
+  border-radius: 35%;
+  background-color: var(--blue-slate);
+  margin-top: 5px;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 4 — display:none removes from layout */
@@ -46,6 +86,10 @@
   Select .banner and set display: none.
   Observe: the button moves up because the banner is removed from layout.
 */
+
+.banner {
+  display: none;
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
@@ -55,5 +99,27 @@
   Select .grid .card and style them (background, padding, border, radius).
   This reinforces block layout and stacking.
 */
+
+.grid {
+  margin-top: 50px;
+}
+
+.grid,
+.card {
+  background-color: var(--dusty-denim);
+  padding: 20px;
+  border: 2px solid var(--deep-spaceblue);
+  border-radius: 15px;
+}
+
+.grid {
+  box-shadow: 10px 10px var(--deep-spaceblue);
+}
+
+.card {
+  background-color: var(--deep-spaceblue);
+  padding: 30px;
+  margin: 10px;
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
