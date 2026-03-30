@@ -20,6 +20,33 @@
   Give .box a fixed height so overflow can happen.
 */
 
+:root {
+  --earth-green: #cad2c5;
+  --muted-teal: #84a98c;
+  --deep-teal: #52796f;
+  --slate-grey: #354f52;
+  --charcoal-blue: #2f3e46;
+}
+
+body,
+.page {
+  background-color: var(--earth-green);
+  color: var(--charcoal-blue);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.row {
+  display: grid;
+  gap: 40px;
+}
+
+.box {
+  height: 100px;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 2 — Base box styling */
@@ -29,6 +56,17 @@
   Style .long-content so it is one long line (hint: white-space: nowrap).
 */
 
+.box {
+  background-color: var(--muted-teal);
+  border: 2px solid var(--deep-teal);
+  border-radius: 7px;
+  height: 180px;
+}
+
+.long-content {
+  white-space: nowrap;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 3 — overflow: visible */
@@ -36,6 +74,10 @@
   Select .box--visible and set overflow: visible.
   Observe: content spills outside the box.
 */
+
+.box--visible {
+  overflow: visible;
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
@@ -45,6 +87,10 @@
   Observe: content is cut off (clipped).
 */
 
+.box--hidden {
+  overflow: hidden;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 5 — overflow: scroll */
@@ -53,6 +99,10 @@
   Observe: scrollbars appear (even if always needed).
 */
 
+.box--scroll {
+  overflow: scroll;
+}
+
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 6 — overflow: auto */
@@ -60,5 +110,9 @@
   Select .box--auto and set overflow: auto.
   Observe: scrollbars appear only when necessary.
 */
+
+.box--auto {
+  overflow: auto;
+}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
