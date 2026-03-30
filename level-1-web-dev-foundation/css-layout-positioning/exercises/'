@@ -55,7 +55,7 @@ body,
   top: 0;
   background-color: var(--stormy-teal);
   padding: 10px;
-  border: 2px solid var(--white);
+  border: 2px solid var(--yale-blue);
 }
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
@@ -67,13 +67,6 @@ body,
   It allows absolutely positioned children to use this card as their reference.
 */
 
-.relative-parent {
-  position: relative;
-  background-color: var(--yale-blue);
-  padding: 5px;
-  border-radius: 5%;
-}
-
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 4 — Place the badge with absolute positioning */
@@ -84,15 +77,6 @@ body,
   Add padding, border-radius, background, and color so it looks like a badge.
 */
 
-.badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  padding: 10px;
-  border-radius: 20%;
-  background-color: var(--alabaster-grey);
-}
-
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
 /* STEP 5 — Create a fixed floating button */
@@ -102,13 +86,6 @@ body,
   Example: bottom: 18px; right: 18px;
   Add width/height, border-radius, and box-shadow.
 */
-
-.chat-fab {
-  position: fixed;
-  bottom: 18px;
-  right: 18px;
-  box-shadow: 3px 3px black;
-}
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
