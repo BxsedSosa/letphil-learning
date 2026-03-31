@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+  🧠 PROJECT: Brand Kit — Importing Google Fonts + Applying Typography System
+
+  ✅ TYPOGRAPHY TOPICS PRACTICED
+  - font-family
+  - font-size
+  - font-weight
+  - font-style
+  - text-align
+  - line-height
+  - letter-spacing / word-spacing
+  - text-transform
+  - text-decoration
+  - importing Google Fonts (project 3)
+
+  IMPORTANT (MENTEE RULES)
+  - This file should contain ONLY instructional comments.
+  - You write the CSS under each step.
+  - After each step: SAVE → REFRESH.
+
+  🎯 GOAL: Import Google Fonts and apply a consistent typography system across a landing section.
+*/
+
+/* STEP 1 — Import Google Fonts */
+/*
+  Pick TWO fonts from Google Fonts:
+    - One display font for headings (example: 'Poppins' or 'Playfair Display')
+    - One readable font for body (example: 'Inter' or 'Roboto')
+  
+  Choose one import method:
+  A) Add <link> tags in the HTML head (above).
+  B) Use @import at the TOP of this CSS file.
+  
+  After importing, test by setting font-family and seeing the font actually change.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* STEP 2 — Base typography system */
+/*
+  Select body and set:
+    - font-family to your BODY font (with fallbacks like sans-serif).
+    - base font-size (16px).
+    - background color.
+  Select .page and set max-width + padding.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+:root {
+  --olive-leaf: #606c38;
+  --black-forest: #283618;
+  --cornsilk: #fefae0;
+  --sunlit-clay: #dda15e;
+  --copperwood: #bc6c25;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  background-color: var(--olive-leaf);
+  color: var(--cornsilk);
+}
+
+.page {
+  max-width: 300px;
+  padding: 50px;
+}
+
+/* STEP 3 — Headings use the DISPLAY font */
+/*
+  Select .hero__title and set font-family to your DISPLAY font.
+  Set font-size big (example: 2.6rem) and font-weight (example: 700).
+  Adjust line-height so the big title looks tight (example: 1.1).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+hero__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.6rem;
+  line-height: 1.1;
+}
+
+/* STEP 4 — Brand label styling */
+/*
+  Select .brand and make it look like a logo label:
+    - font-weight bold
+    - letter-spacing
+    - text-transform: uppercase
+  This teaches 'brand voice' with typography.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.brand {
+  font-weight: bold;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/* STEP 5 — Button typography + decoration */
+/*
+  Select .hero__btn and style it like a button.
+  Remove text-decoration: none.
+  Set font-weight and letter-spacing slightly (optional).
+*/
+
+.hero__btn {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: var(--black-forest);
+}
+
+.hero__btn:hover {
+  color: var(--copperwood);
+}
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
