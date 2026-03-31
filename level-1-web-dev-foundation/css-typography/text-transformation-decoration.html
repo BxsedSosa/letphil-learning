@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Text transformation decoration</title>
+    <style>
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .lowercase {
+        text-transform: lowercase;
+      }
+
+      .capitalize {
+        text-transform: capitalize;
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+
+      .line-through {
+        text-decoration: line-through;
+      }
+
+      .no-decoration {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="uppercase underline line-through">this is uppercase</p>
+    <p class="lowercase line-through">THIS IS LOWERCASE</p>
+    <p class="capitalize underline no-decoration">this is capitalize</p>
+    <a class="no-decoration" href="https://google.com" target="_blank"
+      >Google</a
+    >
+  </body>
+</html>
