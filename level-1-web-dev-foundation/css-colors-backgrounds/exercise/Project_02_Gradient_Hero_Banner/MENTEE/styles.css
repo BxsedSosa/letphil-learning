@@ -1,0 +1,124 @@
+/*
+  🧠 Project 2 — Gradient Hero Banner 
+
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Page base styling */
+/*
+  Select body and remove margin.
+  Set a base font-family.
+  Set a background-color (can be neutral).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+:root {
+  --light-cyan: #e0fbfc;
+  --light-blue: #c2dfe3;
+  --cool-steel: #9db4c0;
+  --blue-slate: #5c6b73;
+  --jet-black: #253237;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--light-cyan);
+  padding: 20px;
+}
+
+/* STEP 2 — Hero gradient background */
+/*
+  Select .hero.
+  Set a gradient background using background-image: linear-gradient(...).
+  Example: linear-gradient(135deg, color1, color2).
+  Add padding and border-radius so it looks like a section.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.hero {
+  background-image: linear-gradient(
+    to bottom,
+    var(--light-blue),
+    var(--cool-steel)
+  );
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* STEP 3 — Text colors on top of gradient */
+/*
+  If the hero background is dark, use light text (color: white-ish).
+  Select .eyebrow, .hero__title, .hero__desc and pick readable colors.
+  Tip: use opacity for the smaller text.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.eyebrow {
+  color: var(--blue-slate);
+}
+
+.hero__title {
+  color: var(--jet-black);
+}
+
+.hero__desc {
+  color: var(black);
+  opacity: 0.7;
+}
+
+/* STEP 4 — Button backgrounds + text colors */
+/*
+  All .btn elements should look like buttons (padding, border-radius, display:inline-block).
+  For .btn--primary:
+    - Choose a background-color and text color with strong contrast.
+  For .btn--ghost:
+    - Use transparent background and a border.
+    - Keep readable text color.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background-color: var(--jet-black);
+  color: var(--light-blue);
+}
+
+.btn--primary:hover {
+  background-color: var(--light-blue);
+}
+
+.btn--ghost {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--jet-black);
+}
+
+.btn--ghost:hover {
+  background-color: var(--blue-slate);
+}
+
+/* STEP 5 — Panel background to compare */
+/*
+  Select .panel and give it a plain background-color (like white).
+  This is just to compare: gradient section vs normal section.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.panel {
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
