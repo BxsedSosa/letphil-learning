@@ -15,6 +15,33 @@
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  margin: 25%;
+}
+
+.header {
+  background-color: cornsilk;
+}
+
+.sidebar {
+  background-color: grey;
+}
+
+.main {
+  background-color: burlywood;
+}
+
+.panel {
+  background-color: lightsalmon;
+}
+
+.footer {
+  background-color: lightgoldenrodyellow;
+}
+
 /* STEP 2 — Enable grid on the layout container */
 /*
   Select .layout and set display: grid.
@@ -22,6 +49,11 @@
 */
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.layout {
+  display: grid;
+  min-height: 100vh;
+}
 
 /* STEP 3 — Define columns + rows for the dashboard */
 /*
@@ -32,6 +64,18 @@
 */
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.sidebar,
+.main,
+.panel {
+  grid-template-columns: 240px 1fr 320px;
+}
+
+.header,
+.content,
+.footer {
+  grid-template-rows: auto 1fr auto;
+}
 
 /* STEP 4 — Use grid-template-areas (advanced) */
 /*
@@ -44,6 +88,13 @@
 */
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.layout {
+  grid-template-areas:
+    "header header header"
+    "sidebar main panel"
+    "footer footer footer";
+}
 
 /* STEP 5 — Assign each section to its area */
 /*
@@ -58,6 +109,26 @@
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
 
+.header {
+  grid-area: 1 / 1 / span 1 / span 3;
+}
+
+.sidebar {
+  grid-area: 2 / 1;
+}
+
+.main {
+  grid-area: 2 / 2;
+}
+
+.panel {
+  grid-area: 2 / 3;
+}
+
+.footer {
+  grid-area: 3 / 1 / span1 / span 3;
+}
+
 /* STEP 6 — Align items (bonus polish) */
 /*
   Try gap on .layout.
@@ -66,6 +137,10 @@
 */
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.layout {
+  gap: 10px;
+}
 
 /* STEP 7 — Responsive switch (stack on mobile) */
 /*
@@ -80,3 +155,43 @@
 */
 
 /* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+@media screen and (max-width: 800px) {
+  .header,
+  .main,
+  .panel,
+  .sidebar,
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .header {
+    grid-area: 1;
+  }
+
+  .sidebar {
+    grid-area: 2;
+  }
+
+  .main {
+    grid-area: 3;
+  }
+
+  .panel {
+    grid-area: 4;
+  }
+
+  .footer {
+    grid-area: 5;
+  }
+
+  .layout {
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "panel"
+      "footer";
+  }
+}
